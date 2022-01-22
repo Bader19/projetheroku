@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<servlet>
+		<servlet-name>SalleControllers</servlet-name>
+		<servlet-class>controller.SalleController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SalleController</servlet-name>
+		<url-pattern>/SalleController</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CrenomController</servlet-name>
+		<servlet-class>controller.CrenomController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CrenomController</servlet-name>
+		<url-pattern>/CrenomController</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ClientsController</servlet-name>
+		<servlet-class>controller.ClientsController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ClientsController</servlet-name>
+		<url-pattern>/ClientsController</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>OccupationController</servlet-name>
+		<servlet-class>controller.OccupationController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>OccupationController</servlet-name>
+		<url-pattern>/OccupationController</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>UserController</servlet-name>
+		<servlet-class>controller.UserController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserController</servlet-name>
+		<url-pattern>/UserController</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
