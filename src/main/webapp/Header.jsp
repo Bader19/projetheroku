@@ -37,7 +37,7 @@
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right">
                                     
-                                    <a href="logout.jsp" class="dropdown-item">
+                                    <a href="index.jsp" class="dropdown-item">
                                         <i class="icon-key"></i>
                                         <span class="ml-2">Logout </span>
                                     </a>
