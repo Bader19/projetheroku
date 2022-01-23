@@ -49,15 +49,14 @@ public class Crenom {
 
 	    public void setHeureFin(Date heureFin) {
 	        this.heureFin = heureFin;
-	    }
+	    }  
 	    
+		 
+	    
+	    
+
 		@Override
 		public String toString() {
-			return "[ id="+ id+" heureDebut=" + getHeureDebut() + ", heureFin=" + getHeureFin() + "]";
+			return "Crenom [ id =" + id + ", heureDebut=" + getHeureDebut() + ", heureFin=" + getHeureFin() + "]";
 		}
-
-	    
-	    
-	 
-
 }
