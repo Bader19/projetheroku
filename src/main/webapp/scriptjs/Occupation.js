@@ -23,7 +23,7 @@ $(document).ready(function() {
 	$('input[type=date]').change(function() {
 		var idsalle = $("#Idsalle option:selected").text();
 		var date = $("#Date").val();
-		alert(idsalle + "-" + date);
+	 
 		$.ajax({
 			url: "OccupationController",
 			data: { op: "disponibilite", Date1: date, Idsalle1: idsalle},
@@ -48,7 +48,7 @@ $(document).ready(function() {
 		var idsalle = $("#Idsalle option:selected").text();
 	 
 		var date = $("#Date").val();
-		alert(idsalle + "-"   + date);
+	 
 		$.ajax({
 			url: "OccupationController",
 			data: { op: "disponibilite", Date1: date, Idsalle1: idsalle },
@@ -73,7 +73,7 @@ $(document).ready(function() {
 		var idsalle = $("#Idsalle option:selected").text();
 	 
 		var date = $("#Date").val();
-		alert(idsalle + "-" + date);
+ 
 		$.ajax({
 			url: "OccupationController",
 			data: { op: "disponibilite", Date1: date,  Idsalle1: idsalle},
@@ -144,7 +144,7 @@ $(document).ready(function() {
 		var date = $("#Date").val();
 		var Idclient = $("#Idclient option:selected").text();
 		var id = $(this).closest('tr').find('td').eq(0).text();
-		alert(idsalle + "|" + idcrenom + "|" + date + "|" + id);
+		 
 		$.ajax({
 			url: "OccupationController",
 			data: { op: "update", id: id, Date1: date, Idsalle1: idsalle, Idcrenom1: idcrenom, Idclient1: Idclient },
