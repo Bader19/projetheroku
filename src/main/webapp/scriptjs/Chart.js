@@ -4,7 +4,7 @@ $(document).ready(function() {
 	$("#Idsalle").change(function() {
 
 		let idsalle = $("#Idsalle option:selected").text();
-		alert(idsalle);
+		 
 		$.ajax({
 			url: "OccupationController",
 			data: { op: "chart", idsalle1: idsalle },
