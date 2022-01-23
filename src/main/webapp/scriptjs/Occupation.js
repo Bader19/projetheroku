@@ -254,7 +254,7 @@ $(document).ready(function() {
 	function remplir(data) {
 		var ligne = "";
 		for (var i = 0; i < data.length; i++) {
-			ligne += "<tr><td>" + data[i].id + "</td><td>" + data[i].date + "</td><td>" + data[i].salle.id + "</td><td>" + data[i].crenom.id + "<td>" + data[i].clientid.id + "</td></td><td><button type='button'  class='btn btn-danger delete1' val='" + data[i].id + "'>Supprimer</button></td><td><button type='button'   class='btn btn-warning update1'>Update</button></td></tr>";
+			ligne += "<tr><td>" + data[i].id + "</td><td>" + data[i].date + "</td><td>" + data[i].salle.id + "</td><td>" + data[i].crenom.getId() + "<td>" + data[i].clientid.id + "</td></td><td><button type='button'  class='btn btn-danger delete1' val='" + data[i].id + "'>Supprimer</button></td><td><button type='button'   class='btn btn-warning update1'>Update</button></td></tr>";
 
 		}
 		$("#contentOccupation").html(ligne);
