@@ -81,10 +81,10 @@
                 <span><i class="icon icon-user"></i></span>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control item" name="HeureDebut(--:--:--)" id="HeureDebut" placeholder="HeureDebut">
+                <input type="text" class="form-control item" name="HeureDebut" id="HeureDebut" placeholder="HeureDebut (--:--:--)">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control item" name="HeureFin(--:--:--)" id="HeureFin" placeholder="HeureFin">
+                <input type="text" class="form-control item" name="HeureFin" id="HeureFin" placeholder="HeureFin(--:--:--)">
             </div>
              
           
