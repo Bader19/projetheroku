@@ -30,7 +30,7 @@ $(document).ready(function() {
 		var id = $(this).closest('tr').find('td').eq(0).text();
 
 
-
+if(Password==Password2){
 		$.ajax({
 			url: "UserController",
 			data: { Username1: Username, email1: email, Password1: Password, phoneNumber1: phoneNumber, role1: role },
@@ -46,6 +46,9 @@ $(document).ready(function() {
 			}
 
 		});
+		}else{
+			alert("Les Mots de passe sont pas identiques");
+		}
 	});
 	$("#log").click(function() {
 		var Username = $("#nom").val();
