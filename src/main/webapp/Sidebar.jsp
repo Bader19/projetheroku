@@ -15,7 +15,7 @@
                                 class="icon icon-app-store"></i><span  >Crenom</span></a>
                         
                     </li>
-                    <li><a  href="index2.jsp" ><i
+                    <li><a  href="dashbord.jsp" ><i
                                 class="icon icon-chart-bar-33"></i><span >Salles</span></a>
                       
                     </li>
