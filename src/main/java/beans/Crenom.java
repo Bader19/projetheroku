@@ -53,7 +53,7 @@ public class Crenom {
 	    
 		@Override
 		public String toString() {
-			return " heureDebut=" + getHeureDebut() + ", heureFin=" + getHeureFin() + "]";
+			return "[ id="+ id+" heureDebut=" + getHeureDebut() + ", heureFin=" + getHeureFin() + "]";
 		}
 
 	    
