@@ -9,7 +9,7 @@ $(document).ready(function() {
 		
 			success: function(data, textStatus, jqXHR) {
 				console.log(JSON.stringify(data))
-			 
+					 admin(data);
 			},
 			error: function(jqXHR, textStatus, errorthrown) {
 				alert(textStatus);
@@ -79,7 +79,7 @@ $(document).ready(function() {
 			data: { op: "AdminValid", id: id, },
 			type: 'POST',
 			success: function(data, textStatus, jqXHR) {
-			 
+				remplir(data);
 			},
 			error: function(jqXHR, textStatus, errorThrown) {
 				console.log(textStatus);
@@ -88,5 +88,12 @@ $(document).ready(function() {
 	});
  
  
- 
+	function admin(data) {
+		var ligne = "";
+		for (var i = 0; i < data.length; i++) {
+			ligne += "<tr><td>" + data[i].id + "</td><td>" + data[i].date + "</td><td>" + data[i].salle.id + "</td><td>" + data[i].crenom.id + "</td><td><button type='button'   class='btn btn-success delete1 valid' val='" + data[i].id + "'>Valider</button></td></tr>";
+
+		}
+		$("#contentadmin").html(ligne);
+	}
 });

@@ -147,7 +147,8 @@ public class OccupationService {
 
 			while (rs.next()) {
 				ls.add(new Occupation(rs.getInt("ID"), rs.getDate("Date"), service.findById(rs.getInt("IDCrenom")),
-						service2.findById(rs.getInt("IDSalle")), client.findById(rs.getInt("Idclient"))));
+						service2.findById(rs.getInt("IDSalle")), client.findById(rs.getInt("Idclient")),
+						rs.getBoolean("Validation")));
 			}
 		} catch (SQLException e) {
 			System.out.println("validation " + e.getMessage());
