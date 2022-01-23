@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
   <link href="./css/style.css" rel="stylesheet">
- 
+<%String role=(String) session.getAttribute("role"); %>
 <div class="quixnav">
             <div class="quixnav-scroll">
                 <ul class="metismenu" id="menu"> 
@@ -26,21 +26,22 @@
                          
                     </li>
                      
-               
+                    <%if( role.equals("Admin") ){ %>
                     <li  id="regester"><a  href="resgister.jsp" aria-expanded="false"><i
                                 class="icon icon-form "></i><span class="nav-text " >regester</span></a>
-                   
+                      <%} %>
                     </li>
                    
-                  
+                    <%if( role.equals("Admin") ){ %>
                     <li><a   href="Validation.jsp"  ><i
                                 class="icon icon-single-copy-06"></i><span  >Validation</span></a>
                          </li>
-                    
+                           <%} %>
+                          <%if( role.equals("Admin") ){ %>
                     <li><a   href="Chart.jsp"  ><i
                                 class="icon icon-single-copy-06"></i><span  >Chart</span></a>
                          </li>
-                       
+                           <%} %>
                     </li>
                 </ul>
             </div>
